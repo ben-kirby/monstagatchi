@@ -27,7 +27,7 @@ class App extends React.Component {
   render(){
     let newGameStart = null;
     if (this.state.gameStarted)  {
-      newGameStart = <Body />
+      newGameStart = <Body monsterName={this.state.monsterName}/>
     } else {
      newGameStart = <NewGameForm
        monsterName = {this.handleMonsterName}

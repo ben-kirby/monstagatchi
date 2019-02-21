@@ -10,7 +10,7 @@ const ButtonStyle = styled.button`
 function Button(props){
   return(
 
-      <ButtonStyle style={props.style}>{props.buttonText}</ButtonStyle>
+      <ButtonStyle onClick={props.onIncremenentStateValue} style={props.style}>{props.buttonText}</ButtonStyle>
 
   )
 }
